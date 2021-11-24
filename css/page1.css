@@ -1,0 +1,562 @@
+@import 'fonts.css';
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'comfortaa';
+    font-weight: 400;
+}
+
+/* title */
+
+.title{
+    color: #F18128;
+    border-bottom: 2px solid #F18128 ;
+    font-style: 36px;
+    line-height: 32px;
+    padding-bottom: 10px;
+    width: max-content;
+    /* inline flex блок растягиваеться под кол во букв */
+    display: inline-flex;
+    /* capitalize первая буква в слове заглавная */
+    
+}
+
+/* title end */
+
+/* button end */
+
+
+.wrapp{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(11,11,13,1) 0%, rgba(10,10,33,1) 71%, rgba(5,12,55,1) 100%);
+    
+}
+
+.container{
+    width: 1140px;
+    width: 80%;
+    min-height: 100px;
+    /* border:1px solid red; */
+    padding: 0 15px;
+    margin: 0 auto;
+    color: white;
+}
+
+/* banner */
+.banner{
+    background:  linear-gradient(45deg, rgb(29, 17, 62) 26%, rgb(97, 9, 148));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    gap: 24px;
+
+    
+}
+.banner .icon-lenta{
+    font-size: 50px;
+}
+
+.banner p{
+    max-width: 300px;
+    color:#ffffff;
+    font-style: 16px;
+    line-height: 19px;
+
+}
+.icon-lenta::before{
+    /* в content вставляеться unicod */
+    content: '\f008';
+    font-weight: 300;
+    color: white;
+    
+}
+::before,
+::after{
+    font-family: 'icons';
+    
+}
+/* banner end*/
+
+/* navbar */
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(3px);
+    border-bottom:  1px dotted #ED8E00;
+    
+    padding: 0 50px;
+  
+}
+.navbar img{
+    width: 300px;
+    
+}
+/* lang_icon */
+.lang{
+    display: flex;
+    gap: 20px;
+
+}
+.lang img{
+    width: 30px;
+    height: 30px;
+}
+/* lang_icon end*/
+
+/* search */
+.search_lang{
+    width: 200px;
+    display: flex;
+    height: 30px;
+    background: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    font-family: 'montserrat';
+}
+.search_lang p{
+    font-family: 'montserrat';
+    font-size: 18px;
+    line-height: 20px;
+}
+.search_lang img{
+width: 20px;
+height: 20px;
+}
+/* search end */
+/* navbar end */
+
+/* header */
+.header{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .header__bg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .header::before{
+        width: 100%;
+        height: 100%;
+        background: rgba(7,15,25,0.75);
+        content: '';
+        position: absolute;
+    }
+    .header__content{
+        position: absolute;
+      
+    }
+    
+    .header__content h2{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 65px;
+        color:#ED8E00;
+        margin-bottom: 50px;
+       
+    }
+    .header__content h1{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 65px;
+        
+        color:white;
+        margin-bottom: 150px;
+       
+    }
+    
+    .header__content--btn{
+        display: flex;
+        gap: 50px;
+    }
+
+/* button */
+.vue-btn{
+    width: 166px;
+    padding: 17px 10px;
+    display: inline-flex;
+    background: #F18128;
+    border-radius: 4px;
+    color:black;
+    font-size: 14px;
+    line-height: 11px;
+    font-weight: 500;
+    font-family: 'roboto';
+    justify-content: center;
+}
+.vue-btn:hover{
+background: linear-gradient(45deg, rgb(29, 17, 62) 26%, rgb(97, 9, 148));
+color: #ffffff;
+}
+    
+/* button end */
+
+/* header end */
+
+
+/* info */
+.info_venom{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    border: 1px dotted  white;
+    border-radius: 10px;
+    padding: 20px;
+   
+}
+.venom_infos{
+max-width: 740px;
+ display: flex;
+flex-direction: column;
+gap: 50px;
+ 
+}
+
+.info_venom p{
+   
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'montserrat';
+    
+}
+
+.venom_img{
+    max-width: 400px;
+    
+}
+.venom_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.raitings h3{
+font-size: 30px;
+line-height: 50px;
+
+
+}
+
+.raitings1{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.raitings1 p{
+    font-size: 25px;
+    line-height: 20px;
+}
+
+/* raiting */
+.rating-mini {
+	display: inline-block;
+	font-size: 0;
+}
+.rating-mini span {
+	padding: 0;
+	font-size: 50px;
+	line-height: 1;
+	color: lightgrey;
+}
+.rating-mini > span:before {
+	content: '★';
+}
+.rating-mini > span.active {
+	color: gold;
+}
+
+
+
+
+
+
+/* info end */
+
+
+
+/* film video */
+.film_video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom:100px;
+
+}
+/* film video end */ 
+
+/* films collections */
+.collections{
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+}
+.cards{
+display: flex;
+justify-content: space-between;
+
+
+}
+.collect1{
+    width: 23%;
+    height: 300px;
+  
+    min-height: 367px;
+}
+.collect1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    
+}
+
+
+/* films collections end */
+
+
+/* footer */
+.footer{
+    width: 100%;
+    min-height: 100px;
+    margin-top: 100px;
+    background:black;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer_cc_emblem img{
+    width: 300px;
+    margin-top: 30px;
+    
+    }
+    .footer_logos{
+        width: 320px;
+        min-height: 30px 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer_logos span img{
+        width: 300px;
+    }
+    
+    
+    .footer_logos img{
+        width: 150px;
+        margin: 20px 0 5px 0;
+    }
+    
+    
+    .footer_1{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .footer_list {
+   margin:auto 10px;
+    }
+
+    
+    
+
+/* footer end */
+/* zagalovok */
+.zagalovok{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 1px dotted white;
+    border-radius: 10px;
+    gap: 50px;
+    padding: 20px 20px;
+}
+.zagalovok h2{
+    padding: 10px 40px;
+    font-family: 'montserrat';
+    font-size: 28px;
+    
+    
+}
+.zagalovok p{
+    max-width: 800px;
+    font-size: 15px;
+    line-height: 21px;
+    font-family: 'montserrat';
+}
+
+.zagalovok_list{
+    display: flex;
+    gap: 10px;
+    
+}
+.zagalovok_list li{
+    
+    font-family: 'monserrat';
+    font-weight: 700;
+    padding: 0 5px ;
+    width: 300px;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px;
+    background:  linear-gradient(45deg, rgb(29, 17, 62) 26%, rgb(97, 9, 148));
+   
+}
+
+
+/* zagalovok end */
+/* films_page */
+.icon-play{
+    width: 40px;
+    height: 46px;
+    color: white;
+}
+.icon-play::before,
+.icon-play::after{
+font-weight: 900;
+position: absolute;
+font-size: 40px;
+    
+}
+/* opacity это прозрачность */
+.icon-play::after{content: '\10f04b'; opacity: 0.5;}
+.icon-play::before{content: '\f04b';}
+.films_page{
+    width: 100%;
+    padding: 60px 0 77px;
+    
+}
+
+.films-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-top: 54px;
+    
+    
+}
+
+.films-card{
+    width: 23%;
+    min-height: 367px;
+    border-radius:6px ;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+.films-card__img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: flex;
+   transition: transform 0.3s;
+}
+
+.films-card__link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+    left: 0;
+    top: 0;
+    padding:18px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.films-card__play{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    
+}
+.time{
+    border: 1px solid white;
+    background:rgba(7, 15, 25, 0.2);
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 10px;
+    font-family: 'montserrat';
+    margin: 10px;
+    padding: 7px;
+    min-width: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.films-card__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.films-card__text h3{
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+    margin-bottom: 12px;
+    font-family: 'montserrat';
+    /* -webkit-box для появления многоточия */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.films-card:hover .films-card__img{
+    transform: scale(1.2);
+    
+}
+
+.films-card__play .icon-play,
+.films-card__play .time{
+    transition: transform 0.3s;
+    
+}
+
+.films-card:hover .films-card__play .icon-play {
+    transform: scale(2) translateY(10px);
+    
+}
+.films-card:hover .time{
+    transform: scale(0);
+}
+/* films_page end*/
+
+
+
+
+
